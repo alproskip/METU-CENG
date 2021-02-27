@@ -1,6 +1,5 @@
 ### Alperen Oğuz Çakmak - 2237162
 # CENG499 | Homework 2 - KNN, K-means, HAC
-Hello again! Sorry about the previous homework. This time I managed to make it easy to test so here we go. 
 
 ## Task 1
 For test purposes of this task, knn.py file has 3 modes.
