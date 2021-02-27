@@ -1,0 +1,105 @@
+<Scene>
+    <MaxRecursionDepth>6</MaxRecursionDepth>
+
+    <BackgroundColor>0 0 0</BackgroundColor>
+
+    <ShadowRayEpsilon>1e-3</ShadowRayEpsilon>
+
+    <Cameras>
+        <Camera id="1">
+            <Position>0 0 0</Position>
+            <Gaze>0 0 -1</Gaze>
+            <Up>0 1 0</Up>
+            <NearPlane>-1 1 -1 1</NearPlane>
+            <NearDistance>1</NearDistance>
+            <ImageResolution>800 800</ImageResolution>
+            <ImageName>simple_transform.ppm</ImageName>
+        </Camera>
+    </Cameras>
+
+    <Lights>
+        <AmbientLight>25 25 25</AmbientLight>
+        <PointLight id="1">
+            <Position>0 0 0 </Position>
+            <Intensity>500 500 500</Intensity>
+        </PointLight>
+    </Lights>
+
+    <Materials>
+        <Material id="1">
+            <AmbientReflectance>0.5 0.5 0.5</AmbientReflectance>
+            <DiffuseReflectance>0.5 0.5 0.5</DiffuseReflectance>
+            <SpecularReflectance>0.5 0.5 0.5</SpecularReflectance>
+            <PhongExponent>1</PhongExponent>
+        </Material>
+    </Materials>
+
+    <Textures>
+        <Texture id="1">
+            <ImageName>textures/skybox_sun_clouds.jpg</ImageName>
+            <Interpolation>bilinear</Interpolation>
+            <DecalMode>replace_all</DecalMode>
+            <Appearance>clamp</Appearance>
+        </Texture>
+        <Texture id="2">
+            <ImageName>textures/sand.jpg</ImageName>
+            <Interpolation>nearest</Interpolation>
+            <DecalMode>replace_kd</DecalMode>
+            <Appearance>repeat</Appearance>
+        </Texture>
+    </Textures>
+
+    <Transformations>
+        <Translation id="1">0 0 -2.0</Translation>
+        <Translation id="2">0 0 2.0</Translation>
+        <Translation id="3">0 0.5 0</Translation>
+        <Scaling id="1">2 2 2</Scaling>
+        <Scaling id="2">0.5 0.5 0.5</Scaling>
+        <Rotation id="1">45 0.0 0.0 1.0</Rotation>
+    </Transformations>
+
+    <VertexData>
+        -0.5 0.5 -2
+        -0.5 -0.5 -2
+        0.5 -0.5 -2
+        0.5 0.5 -2
+        0.75 0.75 -2
+        1 0.75 -2
+        0.875 1 -2
+        -0.875 1 -2
+    </VertexData>
+
+    <TexCoordData>
+        0 1
+        1 1
+        1 0
+        0 0
+        0 1
+        1 1
+        1 0
+    </TexCoordData>
+    <Objects>
+        <Mesh id="1">
+            <Material>1</Material>
+            <Texture>2</Texture>
+            <Transformations>t2 r1 s1 t1</Transformations>
+            <Faces>
+                3 1 2
+                1 3 4
+            </Faces>
+        </Mesh>
+        <Triangle id="1">
+            <Material>1</Material>
+            <Texture>2</Texture>
+            <Transformations>t3</Transformations>
+            <Indices>
+                5 6 7
+            </Indices>
+        </Triangle>
+        <Sphere id="1">
+            <Material>1</Material>
+            <Center>8</Center>
+            <Radius>0.3</Radius>
+        </Sphere>
+    </Objects>
+</Scene>
