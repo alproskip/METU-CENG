@@ -1,0 +1,124 @@
+
+--------------------------------------------------------------
+*** Create tables ***
+Created 4 tables.
+
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+*** Insert into User ***
+0 users are inserted.
+
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+*** Insert into Video ***
+1 video are inserted.
+
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+*** Insert into Comment ***
+0 comments are inserted.
+
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+*** Insert into Watch ***
+2 watch entries are inserted.
+
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+*** List videos which have higher likeCount than dislikeCount ***
+videoTitle	likeCount	dislikeCount
+I will not make any more VLOGs	400	1
+Mert ve Adamlari	315	63
+Mert vs Others (1v5)	192	3
+Mert'in basari oykusu	200	10
+Mert'le bir gun (VLOG)	204	3
+Mike vs Car	300	2
+Pranking my son	194	40
+Pranking my wife	200	9
+SuperMike	200	10
+They pranked me this time	400	10
+Top Challanges	100	10
+When Pulp Fiction Isn't Home (Oven Kid)	400	10
+
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+*** List the videos commented by the given userID ***
+videoTitle	userName	commentText
+I will not make any more VLOGs	Richard	This video is really bad
+Pranking my son	Richard	Nice video :)
+Pranking my wife	Richard	Nice video :)
+Top Challanges	Richard	Nice video :)
+
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+*** Find the oldest published video for a given userID which doesn’t contain ”VLOG” in its title ***
+videoTitle	userName	datePublished
+Bye CengTube	Cindy	2019-02-10
+
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+*** List the trending top three videos for a given time interval ***
+videoTitle	userName	numOfWatch
+Mert'in basari oykusu	Mert	5
+Why do you hate my VLOGs	Jack	4
+Jack's VLOG (Best VLOG ever!!!)	Jack	4
+
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+*** List users and number of videos watched only by her/him ***
+userID	userName	numOfVideosWatched
+5	Sarah	4
+6	Richard	1
+
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+*** List users who have watched and commented all of their own videos ***
+userID	userName	email
+1	Jack	jack@ceng.metu.edu.tr
+3	Tom	tom@gmail.com
+
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+*** List users that has at least one watch but no comments ***
+userID	userName	email
+2	Mike	mike@gmail.com
+4	Mert	mert@metu.edu.tr
+5	Sarah	sarah@gmail.com
+7	Cindy	cindy@yahoo.com
+
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+*** Update the users’ status to ”verified” if the view count of all their videos in total is more than the given number ***
+Number of updated rows 2
+
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+*** Given a video id and a string, update the title of the video with the given id to the new string ***
+Number of updated rows 1
+
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+*** Delete the video(s) with the given video name  ***
+Number of rows after delete 18
+
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+*** Drop tables ***
+Dropped 4 tables.
+
+--------------------------------------------------------------
