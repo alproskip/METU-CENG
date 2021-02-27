@@ -1,10 +1,7 @@
-###########################
-#
 # Alperen Oğuz Çakmak
-# 
+
 # 2237162
-#
-###########################
+ 
 1-)
 Here below are my commands to test this homework in my local machine. (It is written in python 3 but since its my local machine I did not call them with python3)
 
